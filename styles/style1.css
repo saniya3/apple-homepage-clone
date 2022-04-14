@@ -50,11 +50,8 @@ body{
     }
 }
 
-.cross{
-    float: right;
-    margin-right: 30px;
-    margin-top: 10px;
-}
+
+
 @media screen and (max-width: 758px){
     #pop{
         height: fit-content;
@@ -185,4 +182,14 @@ body{
  .btn-new:hover{
     padding: 10px;
  }
- 
+ .indicators {
+    width: 35px;   
+}
+.cross{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    z-index: 99;
+}
