@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+.navbar{
+    font-size: smaller;
+    background-color: #353535;
+    border-radius: 30px;
+    border-color: black;
+    height:auto;
+    width:auto;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+.navbar-toggler{
+    font-size: 1rem;
+    border: 0;
+}
+.nav-item,.nav-item2,.nav-item3{
+    padding: 2px;
+}
+.logo{
+    height: auto;
+    padding-right: 10px;
+    max-width: 33px;
+}
+@media screen and (min-width: 758px) {
+    .logo{
+        margin-bottom: 6px;
+        margin-inline: 22px;
+    }
+    .navbar{
+        font-size: small;
+        width:min-content;
+        height: 40px;
+    }
+    .nav-item{
+        padding: 22px;
+    }
+    .nav-item2{
+        padding-left: 62px;
+        padding-block: 22px;
+    }
+    .nav-item3{
+        padding-left: 20px;
+        padding-right: 25px;
+        padding-block: 22px;
+    }
+}
+
+.cross{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 758px){
+    #pop{
+        height: fit-content;
+    } 
+    .carousel{
+        margin-right: 20px;
+        
+    }
+}
+.phone2{
+    width: 70%;
+}
+.content{
+    margin-left: 0;
+    padding-top: 25px;
+}
+.heading{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.sub{
+    font-size: 4rem;
+    animation: fadeOutDown 2s ;
+}
+.about{
+    color: grey;
+    font-size: 0.8rem;
+    animation: fadeUp 2s ;
+}
+.phone{
+    margin-left: 10px;
+    width: 65%;
+}
+.icon2{
+    color: rgb(95, 132, 169);
+}
+.heading2{
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.all{
+    animation: fadeUp 2s ;
+}
+.classname {
+    -webkit-animation-duration: 2.5s;
+     animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fadeUp {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(120px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0px);
+    }
+ }
+ 
+ @keyframes fadeUp {
+    0% {
+       opacity: 0;
+       transform: translateY(120px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+ }
+ .fadeUp {
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+ }
+ @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @-webkit-keyframes fadeOutDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-100px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0px);
+    }
+ }
+ 
+ @keyframes fadeOutDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+ }
+ .fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+ }
+
+ .pop{
+    display: none;
+    width: 70%;
+    position: fixed;
+    margin-top: 10%;
+    margin-inline: 15%;
+    z-index: 9;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,rgb(104, 102, 102),rgb(24, 24, 38));
+ }
+ .btn-new{
+    float: right;
+    margin-right: 70px;
+    margin-block-end: 20px;
+    border-radius: 20px; 
+    background-color: rgb(255, 255, 255); 
+    padding: 5px;
+ }
+ .btn-new:hover{
+    padding: 10px;
+ }
+ 
