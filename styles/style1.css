@@ -49,16 +49,12 @@ body{
         padding-block: 22px;
     }
 }
-
-
-
 @media screen and (max-width: 758px){
     #pop{
         height: fit-content;
     } 
     .carousel{
-        margin-right: 20px;
-        
+        margin-right: 20px;    
     }
 }
 .phone2{
@@ -72,11 +68,11 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 3rem;
     margin-bottom: 0;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    animation: 2s ease-out 0s 1 fadeUp;
 }
 .sub{
     font-size: 4rem;
-    animation: fadeOutDown 2s ;
+    animation: fadeUp 2s ;
 }
 .about{
     color: grey;
@@ -91,7 +87,7 @@ body{
     color: rgb(95, 132, 169);
 }
 .heading2{
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    animation: 2s ease-out 0s 1 fadeUp;
 }
 .all{
     animation: fadeUp 2s ;
@@ -99,9 +95,8 @@ body{
 .classname {
     -webkit-animation-duration: 2.5s;
      animation-duration: 2.5s;
-  }
-  
-  @-webkit-keyframes fadeUp {
+}
+@-webkit-keyframes fadeUp {
     0% {
        opacity: 0;
        -webkit-transform: translateY(120px);
@@ -110,9 +105,8 @@ body{
        opacity: 1;
        -webkit-transform: translateY(0px);
     }
- }
- 
- @keyframes fadeUp {
+} 
+@keyframes fadeUp {
     0% {
        opacity: 0;
        transform: translateY(120px);
@@ -121,21 +115,20 @@ body{
        opacity: 1;
        transform: translateY(0px);
     }
- }
- .fadeUp {
+}
+.fadeUp {
     -webkit-animation-name: fadeUp;
     animation-name: fadeUp;
- }
- @keyframes slideInFromLeft {
+}
+@keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
     }
     100% {
       transform: translateX(0);
     }
-  }
-
-  @-webkit-keyframes fadeOutDown {
+}
+@-webkit-keyframes fadeOutDown {
     0% {
        opacity: 0;
        -webkit-transform: translateY(-100px);
@@ -144,9 +137,8 @@ body{
        opacity: 1;
        -webkit-transform: translateY(0px);
     }
- }
- 
- @keyframes fadeOutDown {
+} 
+@keyframes fadeOutDown {
     0% {
        opacity: 0;
        transform: translateY(-100px);
@@ -155,13 +147,12 @@ body{
        opacity: 1;
        transform: translateY(0px);
     }
- }
- .fadeOutDown {
+}
+.fadeOutDown {
     -webkit-animation-name: fadeOutDown;
     animation-name: fadeOutDown;
- }
-
- .pop{
+}
+.pop{
     display: none;
     width: 70%;
     position: fixed;
@@ -170,19 +161,20 @@ body{
     z-index: 9;
     border-radius: 50px;
     background-image: linear-gradient(to right,rgb(104, 102, 102),rgb(24, 24, 38));
- }
- .btn-new{
+}
+.new{
+    background-color: grey;
+    color: black;
     float: right;
     margin-right: 70px;
     margin-block-end: 20px;
-    border-radius: 20px; 
-    background-color: rgb(255, 255, 255); 
-    padding: 5px;
+    border-radius: 20px;
+}
+.new:hover{
+    background-color: blue;
+    color: white;
  }
- .btn-new:hover{
-    padding: 10px;
- }
- .indicators {
+.indicators {
     width: 35px;   
 }
 .cross{

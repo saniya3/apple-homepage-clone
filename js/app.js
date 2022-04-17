@@ -15,4 +15,3 @@ function pop(){
         $('#pop').removeClass('classname fadeUp');
     });   
 }
-
