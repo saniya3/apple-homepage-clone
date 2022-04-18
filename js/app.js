@@ -1,10 +1,10 @@
 function image(url){
-    var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
+    // var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
     document.getElementById("img").src=url;
-    $('#img').addClass('classname fadeUp');
-    $('#img').one(animationEvent, function(event) {
-        $('#img').removeClass('classname fadeUp');
-    });   
+    // $('#img').addClass('classname fadeUp');
+    // $('#img').one(animationEvent, function(event) {
+    //     $('#img').removeClass('classname fadeUp');
+    // });   
 }
 
 function pop(){

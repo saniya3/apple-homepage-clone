@@ -57,31 +57,50 @@ body{
         margin-right: 20px;    
     }
 }
+@media screen and (max-width: 1199px){
+    .phone{
+        margin-left: 10px;
+        padding-right: 30px;
+        width: 280px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .phone{
+        margin-left: 10px;
+        width: 23vw;
+    } 
+}
 .phone2{
-    width: 70%;
+    width: 65%;
 }
 .content{
     margin-left: 0;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 .heading{
     font-family: 'Quicksand', sans-serif;
-    font-size: 3rem;
+    font-size: 60px;
     margin-bottom: 0;
     animation: 2s ease-out 0s 1 fadeUp;
 }
 .sub{
-    font-size: 4rem;
+    font-size: 50px;
     animation: fadeUp 2s ;
 }
 .about{
     color: grey;
-    font-size: 0.8rem;
+    font-size: 16px;
     animation: fadeUp 2s ;
 }
 .phone{
     margin-left: 10px;
-    width: 65%;
+    overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+.btn{
+    border-radius: 30px;
 }
 .icon2{
     color: rgb(95, 132, 169);
@@ -94,7 +113,7 @@ body{
 }
 .classname {
     -webkit-animation-duration: 2.5s;
-     animation-duration: 2.5s;
+    animation-duration: 2.5s;
 }
 @-webkit-keyframes fadeUp {
     0% {
@@ -184,4 +203,18 @@ body{
     margin-right: 30px;
     margin-top: 10px;
     z-index: 99;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
