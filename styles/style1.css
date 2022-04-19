@@ -2,15 +2,15 @@
 body{
     background-color: black;
     color: white;
-    overflow-x: hidden;
+    
 }
 .navbar{
-    font-size: smaller;
+    font-size: 2vw;
     background-color: #353535;
     border-radius: 30px;
     border-color: black;
     height:auto;
-    width:auto;
+    width:100%;
     margin-right: 3%;
     margin-top: 3%;
 }
@@ -33,7 +33,6 @@ body{
     }
     .navbar{
         font-size: small;
-        width:min-content;
         height: 40px;
     }
     .nav-item{
@@ -57,21 +56,35 @@ body{
         margin-right: 20px;    
     }
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
     .phone{
         margin-left: 10px;
-        padding-right: 30px;
-        width: 280px;
+        padding-right: 40px;
+        width: 290px;
+    }
+    .nav-item,.nav-item2,.nav-item3{
+        padding:   14.5px;
+    }
+    .all{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 994px){
+    .nav-item,.nav-item2,.nav-item3{
+        padding:   5px;
     }
 }
 @media screen and (min-width: 1200px){
     .phone{
         margin-left: 10px;
-        width: 23vw;
+        width: 25vw;
     } 
+    .all{
+        width: 25vw;
+    }
 }
 .phone2{
-    width: 65%;
+    width:350px;
 }
 .content{
     margin-left: 0;
@@ -90,6 +103,11 @@ body{
 .about{
     color: grey;
     font-size: 16px;
+    animation: fadeUp 2s ;
+}
+.about2{
+    color: grey;
+    font-size: 15px;
     animation: fadeUp 2s ;
 }
 .phone{
