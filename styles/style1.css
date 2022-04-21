@@ -2,10 +2,9 @@
 body{
     background-color: black;
     color: white;
-    
 }
 .navbar{
-    font-size: 2vw;
+   
     background-color: #353535;
     border-radius: 30px;
     border-color: black;
@@ -24,12 +23,11 @@ body{
 .logo{
     height: auto;
     padding-right: 10px;
-    max-width: 33px;
 }
 @media screen and (min-width: 758px) {
     .logo{
         margin-bottom: 6px;
-        margin-inline: 22px;
+        margin-inline: 10px;
     }
     .navbar{
         font-size: small;
@@ -63,10 +61,28 @@ body{
         width: 290px;
     }
     .nav-item,.nav-item2,.nav-item3{
-        padding:   14.5px;
+        padding:  14.5px;
     }
     .all{
         width: 300px;
+    }
+    .heading{
+        font-size: 60px;
+    }
+    .sub{
+        font-size: 50px;
+    }
+    .about{
+        font-size: 16px;
+    }
+    .about2{
+        font-size: 15px;
+    }
+    .heading2{
+        font-size: 16px;
+    }
+    .icon3{
+        font-size: 2em;
     }
 }
 @media screen and (max-width: 994px){
@@ -82,9 +98,59 @@ body{
     .all{
         width: 25vw;
     }
+    .heading{
+        font-size: 6vw;
+    }
+    .sub{
+        font-size: 5vw;
+    }
+    .about{
+        font-size: 1.1vw;
+    }
+    .about2{
+        font-size: 1.1vw;
+    }
+    .heading2{
+        font-size: 1.3vw;
+    }
+    .icon2{
+        font-size: 1vw;
+    }
+    .icon3{
+        font-size: 2vw;
+    }
+    .btn{
+        font-size: 1.2vw;
+    }
+}
+@media screen and (min-width: 1700px){
+    .navbar{
+        height:2.5vw;
+        font-size: 1.1vw;
+        width: 80vw;
+    }
+    .navstyle{
+        margin-left: 10vw;
+        padding-left: 0;  
+    }
+    .logo{
+       margin-left: 1.5vw;
+       max-width: 1.7vw;
+    }
+    .nav-item,.nav-item2,.nav-item3{
+        padding: 1.8vw;
+    }
+}
+@media screen and (max-width: 1700px){
+    .logo{
+        max-width: 33px;
+     }
+}
+.content2{
+    padding-top: 2vw;
 }
 .phone2{
-    width:350px;
+    width:75%;
 }
 .content{
     margin-left: 0;
@@ -92,22 +158,21 @@ body{
 }
 .heading{
     font-family: 'Quicksand', sans-serif;
-    font-size: 60px;
+    
     margin-bottom: 0;
     animation: 2s ease-out 0s 1 fadeUp;
 }
-.sub{
-    font-size: 50px;
+.sub{ 
     animation: fadeUp 2s ;
 }
 .about{
     color: grey;
-    font-size: 16px;
+    
     animation: fadeUp 2s ;
 }
 .about2{
     color: grey;
-    font-size: 15px;
+    
     animation: fadeUp 2s ;
 }
 .phone{
@@ -146,7 +211,7 @@ body{
 @keyframes fadeUp {
     0% {
        opacity: 0;
-       transform: translateY(120px);
+       transform: translateY(150px);
     }
     100% {
        opacity: 1;
